@@ -45,9 +45,11 @@ This is a Eureka Client used for Sending and reciveing messages for the chat app
 1. /message : POST request to send message from sender to the recipient. Please note it requires an authentication token as a header, in order to send message which was returned by the login request. Returns message id and the time it was sent. 
 2. /message : GET request to receive messages. Please note it requires an authentication token as a header. Returns list of messages. 
 
+Port Number: 8081
+
 DB Name: Message.db
 
-schema:
+Schema:
 1. message 
 2. content
 3. text
