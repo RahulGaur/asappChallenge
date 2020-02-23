@@ -1,7 +1,7 @@
 # asappChallenge
  REST API for a chat backend.
  
-# Tech Stack:
+# Tech Stack
 1. Java 
 2. Spring Boot
 3. Eureka
