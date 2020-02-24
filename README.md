@@ -66,7 +66,7 @@ Sample body for the POST reques (besideds the header):
   "content": {
   	"type": "text",
   	"text":{
-  		"type":"string",
+  		"type":"text",
   		"text":"hey how are you"
   	}
   	
