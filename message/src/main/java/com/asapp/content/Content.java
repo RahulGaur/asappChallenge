@@ -7,12 +7,27 @@ public class Content {
     Image image;
     Video video;
 
+
+    public Content() {
+
+    }
+
     public Content(String type, Text text){
         this.type = type;
         this.text = text;
     }
     public Content(int contentId){
         this.contentId = contentId;
+    }
+
+    public Content (String type, Image image) {
+        this.type = type;
+        this.image = image;
+    }
+
+    public Content (String type, Video video) {
+        this.type = type;
+        this.video = video;
     }
 
     public Content(int contentId, String type, Text text, Image image, Video video) {

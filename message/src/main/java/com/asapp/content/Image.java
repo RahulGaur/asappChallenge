@@ -7,6 +7,9 @@ public class Image {
     double height;
     double width;
 
+    public Image() {
+
+    }
     public Image(String url, double height, double width) {
         this.url = url;
         this.height = height;

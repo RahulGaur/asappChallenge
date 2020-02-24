@@ -6,9 +6,13 @@ public class Video {
     String url;
     String source;
 
-    public Video(String type, String url){
+    public Video() {
+
+    }
+    public Video(String type, String url, String source){
         this.type = type;
         this.url = url;
+        this.source = source;
     }
 
     public Video(int videoId, String url, String source) {

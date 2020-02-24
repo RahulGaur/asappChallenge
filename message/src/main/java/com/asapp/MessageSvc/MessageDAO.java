@@ -83,10 +83,9 @@ public class MessageDAO {
         } else if (type.equals("image")) {
             id = addImage(content.getImage());
             insertSql = "INSERT INTO content (type, image_id) VALUES (?, ?)";
-
         } else if (type.equals("video")){
             id = addVideo(content.getVideo());
-            insertSql = "INSERT INTO contetn (type, video_id) VALUES (?, ?)";
+            insertSql = "INSERT INTO content (type, video_id) VALUES (?, ?)";
         } else {
             id = -1;
             insertSql = "";
@@ -111,7 +110,7 @@ public class MessageDAO {
         if(video == null) {
             return -1;
         }
-        String insertSql = "INSERT INTO image (url, source) VALUES (?, ?)";
+        String insertSql = "INSERT INTO video (url, source) VALUES (?, ?)";
         try {
             jdbcTemplate.update(connection -> {
                 PreparedStatement ps = connection.prepareStatement(insertSql);
@@ -227,10 +226,10 @@ public class MessageDAO {
     }
 
     private Video getVideo(int videoId) {
-        String sql = "select * from video where vidoe_id = ?";
+        String sql = "select * from video where video_id = ?";
         Video video = jdbcTemplate.queryForObject(sql, new Object[] {videoId}, (rs, rowNum) ->
             new Video(
-                rs.getInt("vidoe_id"),
+                rs.getInt("video_id"),
                 rs.getString("url"),
                 rs.getString("source")
             ));
