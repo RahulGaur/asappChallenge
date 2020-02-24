@@ -113,3 +113,4 @@ To bring up this service:
 2. Add comments
 3. Better error handling and better error response messages.
 4. Client facing UI to call these endpoints. 
+5. Optimize calls to DB while retreiving messages for a user from the DB.
