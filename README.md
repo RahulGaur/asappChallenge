@@ -59,25 +59,20 @@ This is a Eureka Client used for Sending and reciveing messages for the chat app
 
 Sample body for the POST reques (besideds the header):
 
+```
 {
   "sender": 2,
-  
   "recipient": 1,
-  
   "content": {
-  
   	"type": "text",
-   
   	"text":{
-   
-  		"type":"text",
-    
+  		"type":"string",
   		"text":"hey how are you"
-    
   	}
   	
   }
 }
+```
 
 2. /message : GET request to receive messages. Please note it requires an authentication token as a header. Returns list of messages. 
 
