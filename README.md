@@ -88,14 +88,14 @@ Schema:
 5. video
 
 Content Table:
-
+```
 Name       | Type            | Example
 content_id |Integer          | 1
 type       |Varchar          | text/string/image/video
 text_id    |Integer(Nullable)| 1
 image_id   |Integer(Nullable)| 2
 video_id   |Integer(Nullable)| 2
-
+```
 Each content has a content_id which can be mapped to a text_id or image_id or video_id
 
 Each message would have a content_id attached to it. 
