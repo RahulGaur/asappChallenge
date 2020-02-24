@@ -106,3 +106,12 @@ To bring up this service:
 1. cd ~/message
 2. mvn package (make sure to have maven installed and added to the PATH )
 3. java -jar ./target/message-0.0.1-SNAPSHOT.jar
+
+# Tech Debts
+
+1. Add Unit tests
+2. Add comments
+3. Better error handling and better error response messages.
+4. Client facing UI to call these endpoints. 
+5. Add local cache (Hash Table), to store Auth tokens for the users
+6. Optimize calls to DB while retreiving messages for a user from the DB.
