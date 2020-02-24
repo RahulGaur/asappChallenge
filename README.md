@@ -57,7 +57,7 @@ This is a Eureka Client used for Sending and reciveing messages for the chat app
 
 1. /message : POST request to send message from sender to the recipient. Please note it requires an authentication token as a header, in order to send message which was returned by the login request. Returns message id and the time it was sent. 
 
-Sample body for the POST reques (besideds the header):
+Sample body for the POST reques (besides the header):
 
 ```
 {
@@ -73,6 +73,8 @@ Sample body for the POST reques (besideds the header):
   }
 }
 ```
+
+This request calls the auth service to check if the authentication bearer is valid or not. If not, it rejects the request.
 
 2. /message : GET request to receive messages. Please note it requires an authentication token as a header. Returns list of messages. 
 
