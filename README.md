@@ -44,6 +44,11 @@ Schema:
 1. user
 2. user_token
 
+To bring up this service:
+1. mvn package (make sure to have maven installed and added to the PATH )
+2. java -jar ./target/auth-0.0.1-SNAPSHOT.jar
+
+
 # Message Service
 
 This is a Eureka Client used for Sending and reciveing messages for the chat application. This service has two Api's
@@ -74,3 +79,7 @@ video_id   |Integer(Nullable)| 2
 Each content has a content_id which can be mapped to a text_id or image_id or video_id
 
 Each message would have a content_id attached to it. 
+
+To bring up this service:
+1. mvn package (make sure to have maven installed and added to the PATH )
+2. java -jar ./target/message-0.0.1-SNAPSHOT.jar
