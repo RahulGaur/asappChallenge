@@ -56,6 +56,22 @@ To bring up this service:
 This is a Eureka Client used for Sending and reciveing messages for the chat application. This service has two Api's
 
 1. /message : POST request to send message from sender to the recipient. Please note it requires an authentication token as a header, in order to send message which was returned by the login request. Returns message id and the time it was sent. 
+
+Sample body for the POST reques (besideds the header):
+
+{
+  "sender": 2,
+  "recipient": 1,
+  "content": {
+  	"type": "text",
+  	"text":{
+  		"type":"text",
+  		"text":"hey how are you"
+  	}
+  	
+  }
+}
+
 2. /message : GET request to receive messages. Please note it requires an authentication token as a header. Returns list of messages. 
 
 Port Number: 8081
