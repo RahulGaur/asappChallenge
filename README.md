@@ -24,6 +24,7 @@ This is Eureka Service Registry Server – This microservice provides the servic
 Port Number: 8761
 
 To bring up this service:
+1. cd ~/discovery
 1. mvn package (make sure to have maven installed and added to the PATH )
 2. java -jar ./target/discovery-0.0.1-SNAPSHOT.jar
 
@@ -45,8 +46,9 @@ Schema:
 2. user_token
 
 To bring up this service:
-1. mvn package (make sure to have maven installed and added to the PATH )
-2. java -jar ./target/auth-0.0.1-SNAPSHOT.jar
+1. cd ~/auth
+2. mvn package (make sure to have maven installed and added to the PATH )
+3. java -jar ./target/auth-0.0.1-SNAPSHOT.jar
 
 
 # Message Service
@@ -81,5 +83,6 @@ Each content has a content_id which can be mapped to a text_id or image_id or vi
 Each message would have a content_id attached to it. 
 
 To bring up this service:
-1. mvn package (make sure to have maven installed and added to the PATH )
-2. java -jar ./target/message-0.0.1-SNAPSHOT.jar
+1. cd ~/message
+2. mvn package (make sure to have maven installed and added to the PATH )
+3. java -jar ./target/message-0.0.1-SNAPSHOT.jar
