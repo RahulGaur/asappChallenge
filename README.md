@@ -61,12 +61,19 @@ Sample body for the POST reques (besideds the header):
 
 {
   "sender": 2,
+  
   "recipient": 1,
+  
   "content": {
+  
   	"type": "text",
+   
   	"text":{
+   
   		"type":"text",
+    
   		"text":"hey how are you"
+    
   	}
   	
   }
